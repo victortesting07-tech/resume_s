@@ -5,6 +5,45 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Victor Jaglen | Operations Team Leader</title>
   <link rel="stylesheet" href="style.css" />
+  <style>
+    /* Fix for PDF export — disable animations & clipping */
+    .hero {
+      overflow: visible !important;
+    }
+  
+    .section,
+    .card,
+    .exp-card,
+    .main-grid,
+    .left-col,
+    .sidebar {
+      animation: none !important;
+      opacity: 1 !important;
+      transform: none !important;
+    }
+  
+    @media print {
+      .page-wrapper {
+        height: auto !important;
+        min-height: unset !important;
+      }
+  
+      .exp-bullets {
+        display: block !important;
+        max-height: none !important;
+        overflow: visible !important;
+      }
+  
+      .exp-toggle {
+        display: none !important;
+      }
+  
+      * {
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+      }
+    }
+  </style>
 </head>
 <body>
 
